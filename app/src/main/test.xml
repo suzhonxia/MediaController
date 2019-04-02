@@ -1,0 +1,11 @@
+<DIDL-Lite xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sec="http://www.sec.co.kr/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp/"
+           xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite/">
+    <item id="p1302" parentID="0" restricted="0">
+        <dc:title>video</dc:title>
+        <upnp:class>object.item.videoItem</upnp:class>
+        <upnp:creator>Anonymous</upnp:creator>
+        <res protocolInfo="http-get:*:*/*:*">
+            https://xueyuan-media.yitong.com/x-multimedia/2018/12/29/adf94469-4e94-4e28-9098-0151a980702a/94d8017f-72a3-428d-a8d5-492ab84a1bd9-960w.m3u8
+        </res>
+    </item>
+</DIDL-Lite>
