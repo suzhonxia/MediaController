@@ -4,18 +4,19 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 import org.fourthline.cling.android.FixedAndroidLogHandler;
 import org.fourthline.cling.model.meta.Device;
 import org.fourthline.cling.transport.Router;
 import org.fourthline.cling.transport.RouterException;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 /**
@@ -23,7 +24,7 @@ import org.fourthline.cling.transport.RouterException;
  * @date 2019/1/29 11:55
  * @desc
  */
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, IBrowserView, AdapterView.OnItemClickListener {
+public class MainActivity extends Activity implements View.OnClickListener, IBrowserView, AdapterView.OnItemClickListener {
     private ClingService clingService;
 
     private ArrayAdapter<DeviceDisplay> listAdapter;

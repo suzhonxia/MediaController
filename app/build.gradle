@@ -22,6 +22,13 @@ android {
     packagingOptions {
         exclude 'META-INF/beans.xml'
     }
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 // 更改gradle的默认缓存策略
@@ -37,7 +44,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation 'com.blankj:utilcode:1.20.4'
+    implementation 'com.blankj:utilcode:1.23.7'
     implementation 'com.google.android:flexbox:0.3.2'
     // Cling library
     implementation 'org.fourthline.cling:cling-core:2.1.1'

@@ -1,13 +1,14 @@
 package com.sun.mediacontroller;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.SeekBar;
+
 import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.ToastUtils;
-import java.util.Locale;
+
 import org.fourthline.cling.controlpoint.ControlPoint;
 import org.fourthline.cling.model.action.ActionInvocation;
 import org.fourthline.cling.model.message.UpnpResponse;
@@ -23,13 +24,15 @@ import org.fourthline.cling.support.avtransport.callback.Stop;
 import org.fourthline.cling.support.renderingcontrol.callback.SetMute;
 import org.fourthline.cling.support.renderingcontrol.callback.SetVolume;
 
+import java.util.Locale;
+
 
 /**
  * @author Sun
  * @date 2019/1/29 13:37
  * @desc 控制器
  */
-public class ControllerActivity extends AppCompatActivity implements View.OnClickListener {
+public class ControllerActivity extends Activity implements View.OnClickListener {
     private static final String url = "https://xueyuan-media.yitong.com/x-multimedia/2018/12/29/adf94469-4e94-4e28-9098-0151a980702a/94d8017f-72a3-428d-a8d5-492ab84a1bd9-960w.m3u8";
     private static final long total = 322;
 

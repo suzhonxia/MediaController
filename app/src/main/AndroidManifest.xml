@@ -16,8 +16,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-        <!--<activity android:name=".BrowserActivity">-->
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/LauncherTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -25,6 +26,7 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".MainActivity"/>
         <activity android:name=".ControllerActivity"/>
 
         <service android:name="org.fourthline.cling.android.AndroidUpnpServiceImpl"/>
